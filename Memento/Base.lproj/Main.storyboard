@@ -80,7 +80,9 @@
                                 <rect key="frame" x="0.0" y="13" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Memento" id="Kjc-HW-F2c"/>
+                                    <navigationItem title="Memento" id="Kjc-HW-F2c">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="4e4-sT-bV5"/>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
