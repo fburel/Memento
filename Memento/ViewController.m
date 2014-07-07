@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "MementoGame.h"
 
 @interface ViewController ()
+
+// jeu en cours
+@property (readwrite, strong, nonatomic) MementoGame * game;
 
 @end
 
