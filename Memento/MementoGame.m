@@ -11,6 +11,7 @@
 
 @interface MementoGame ()
 
+// Liste de cartes dans l'ordre ( 0 ... 11)
 @property (readwrite, strong, nonatomic) NSArray * deck;
 
 @end
@@ -21,6 +22,7 @@
 
 + (instancetype)newGame
 {
+    
     NSArray * baseSet = @[
                           @(MementoGameCardValue1),
                           @(MementoGameCardValue1),

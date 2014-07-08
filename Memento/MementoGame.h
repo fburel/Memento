@@ -15,20 +15,24 @@ typedef struct
     int column;
 } MementoGamePosition;
 
+
+// List of the possible card
 typedef enum{
-    MementoGameCardValue1 = 1,
-    MementoGameCardValue2 = 2,
-    MementoGameCardValue3 = 3,
-    MementoGameCardValue4 = 4,
-    MementoGameCardJoker1 = 5,
-    MementoGameCardJoker2 = 6
+    MementoGameCardValue1,
+    MementoGameCardValue2,
+    MementoGameCardValue3,
+    MementoGameCardValue4,
+    MementoGameCardJoker1,
+    MementoGameCardJoker2
 } MementoGameCard;
 
 
 @interface MementoGame : NSObject
 
+// Create a new game with random set of cards
 + (instancetype) newGame;
 
+// Returns the value of a card at the given position
 - (MementoGameCard) valueForCardAtPosition:(MementoGamePosition)position;
 
 
