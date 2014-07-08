@@ -40,7 +40,28 @@
         
     }
     
+    [self beginNewGame:self];
+}
+
+- (IBAction)beginNewGame:(id)sender
+{
     self.game = [MementoGame newGame];
+    
+    for (UIView * item in self.view.subviews)
+    {
+        
+        if([item isKindOfClass:[CardView class]])
+        {
+            CardView * card = (CardView *)item;
+            
+            if([card isShowingValueSide])
+            {
+                [card flip];
+            }
+            
+        }
+        
+    }
 }
 
 - (void) cardTapped:(UIGestureRecognizer *)sender
@@ -95,7 +116,6 @@
     
     return image;
 }
-
 
 - (MementoGamePosition) positionForCard:(CardView *)card
 {
