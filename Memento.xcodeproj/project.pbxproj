@@ -22,6 +22,7 @@
 		0C221977196AA4C800BF1A6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C221975196AA4C800BF1A6D /* InfoPlist.strings */; };
 		0C221979196AA4C800BF1A6D /* MementoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C221978196AA4C800BF1A6D /* MementoTests.m */; };
 		0C221984196ADCB800BF1A6D /* MementoGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C221983196ADCB800BF1A6D /* MementoGame.m */; };
+		0C22198A196BDDB100BF1A6D /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C221989196BDDB100BF1A6D /* CardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		0C221978196AA4C800BF1A6D /* MementoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MementoTests.m; sourceTree = "<group>"; };
 		0C221982196ADCB800BF1A6D /* MementoGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MementoGame.h; sourceTree = "<group>"; };
 		0C221983196ADCB800BF1A6D /* MementoGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MementoGame.m; sourceTree = "<group>"; };
+		0C221988196BDDB100BF1A6D /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
+		0C221989196BDDB100BF1A6D /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				0C221983196ADCB800BF1A6D /* MementoGame.m */,
 				0C221965196AA4C800BF1A6D /* Images.xcassets */,
 				0C221954196AA4C800BF1A6D /* Supporting Files */,
+				0C221988196BDDB100BF1A6D /* CardView.h */,
+				0C221989196BDDB100BF1A6D /* CardView.m */,
 			);
 			path = Memento;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 			files = (
 				0C221964196AA4C800BF1A6D /* ViewController.m in Sources */,
 				0C22195E196AA4C800BF1A6D /* AppDelegate.m in Sources */,
+				0C22198A196BDDB100BF1A6D /* CardView.m in Sources */,
 				0C22195A196AA4C800BF1A6D /* main.m in Sources */,
 				0C221984196ADCB800BF1A6D /* MementoGame.m in Sources */,
 			);
