@@ -45,8 +45,10 @@
 {
     self.valueSideImageView.image = self.image;
     
-    self.coverSideImageView.hidden = !self.coverSideImageView.hidden;
-    self.valueSideImageView.hidden = !self.valueSideImageView.hidden;
+    [UIView transitionWithView:self duration:.4 options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
+        self.coverSideImageView.hidden = !self.coverSideImageView.hidden;
+        self.valueSideImageView.hidden = !self.valueSideImageView.hidden;
+    } completion:nil];
 }
 
 - (BOOL) isShowingValueSide
