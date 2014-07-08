@@ -209,6 +209,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "florian burel";
 				TargetAttributes = {
+					0C221949196AA4C800BF1A6D = {
+						DevelopmentTeam = Z9AH4KN35R;
+					};
 					0C22196A196AA4C800BF1A6D = {
 						TestTargetID = 0C221949196AA4C800BF1A6D;
 					};
@@ -388,7 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Memento/Memento-Prefix.pch";
 				INFOPLIST_FILE = "Memento/Memento-Info.plist";
@@ -402,7 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Memento/Memento-Prefix.pch";
 				INFOPLIST_FILE = "Memento/Memento-Info.plist";

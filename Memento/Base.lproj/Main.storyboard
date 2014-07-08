@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYV-Io-pEk" customClass="CardView">
-                                <rect key="frame" x="20" y="47" width="88" height="123"/>
+                                <rect key="frame" x="20" y="28" width="88" height="127"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -26,61 +26,49 @@
                                 </connections>
                             </view>
                             <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ak6-aR-y6Z" customClass="CardView">
-                                <rect key="frame" x="20" y="178" width="88" height="122"/>
+                                <rect key="frame" x="20" y="163" width="88" height="127"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZa-ka-J2v" customClass="CardView">
-                                <rect key="frame" x="20" y="308" width="88" height="122"/>
+                                <rect key="frame" x="20" y="298" width="88" height="127"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGs-3h-4JS" customClass="CardView">
-                                <rect key="frame" x="20" y="438" width="88" height="122"/>
+                                <rect key="frame" x="20" y="433" width="88" height="127"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Wc-8p-UPo" customClass="CardView">
-                                <rect key="frame" x="116" y="47" width="88" height="123"/>
+                                <rect key="frame" x="116" y="28" width="88" height="127"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCD-x3-xU3" customClass="CardView">
-                                <rect key="frame" x="212" y="47" width="88" height="123"/>
+                                <rect key="frame" x="212" y="28" width="88" height="127"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqM-rj-03z" customClass="CardView">
-                                <rect key="frame" x="117" y="178" width="87" height="122"/>
+                                <rect key="frame" x="117" y="163" width="87" height="127"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KMI-fP-lp7" customClass="CardView">
-                                <rect key="frame" x="117" y="308" width="87" height="122"/>
+                                <rect key="frame" x="117" y="298" width="87" height="127"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHx-Yb-30O" customClass="CardView">
-                                <rect key="frame" x="213" y="178" width="88" height="122"/>
+                                <rect key="frame" x="213" y="163" width="88" height="127"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TlI-v2-t9o" customClass="CardView">
-                                <rect key="frame" x="213" y="308" width="88" height="122"/>
+                                <rect key="frame" x="213" y="298" width="88" height="127"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view tag="12" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Whe-DI-fQD" customClass="CardView">
-                                <rect key="frame" x="213" y="438" width="88" height="122"/>
+                                <rect key="frame" x="213" y="433" width="88" height="127"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view tag="11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBv-3U-71Z" customClass="CardView">
-                                <rect key="frame" x="117" y="438" width="87" height="122"/>
+                                <rect key="frame" x="117" y="433" width="87" height="127"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rKy-bx-fOv">
-                                <rect key="frame" x="0.0" y="-5" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Memento" id="Kjc-HW-F2c">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="4e4-sT-bV5">
-                                            <connections>
-                                                <action selector="beginNewGame:" destination="vXZ-lx-hvc" id="QLt-3I-qqr"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.9008091517857143" green="0.9008091517857143" blue="0.9008091517857143" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -94,7 +82,6 @@
                             <constraint firstItem="dqM-rj-03z" firstAttribute="width" secondItem="0Wc-8p-UPo" secondAttribute="width" id="DQK-2U-1gK"/>
                             <constraint firstItem="ak6-aR-y6Z" firstAttribute="centerX" secondItem="BYV-Io-pEk" secondAttribute="centerX" id="E1n-wT-oyw"/>
                             <constraint firstItem="ak6-aR-y6Z" firstAttribute="centerY" secondItem="dqM-rj-03z" secondAttribute="centerY" id="G3j-C2-tdq"/>
-                            <constraint firstAttribute="trailing" secondItem="rKy-bx-fOv" secondAttribute="trailing" id="HS8-1g-UlV"/>
                             <constraint firstItem="BYV-Io-pEk" firstAttribute="height" secondItem="0Wc-8p-UPo" secondAttribute="height" id="Hmz-AG-EnP"/>
                             <constraint firstItem="ak6-aR-y6Z" firstAttribute="height" secondItem="FZa-ka-J2v" secondAttribute="height" id="I5Y-F4-qtg"/>
                             <constraint firstItem="wHx-Yb-30O" firstAttribute="width" secondItem="TlI-v2-t9o" secondAttribute="width" id="K4N-wH-XQ6"/>
@@ -102,14 +89,12 @@
                             <constraint firstItem="FZa-ka-J2v" firstAttribute="centerY" secondItem="KMI-fP-lp7" secondAttribute="centerY" id="Kck-uc-h7n"/>
                             <constraint firstItem="DGs-3h-4JS" firstAttribute="width" secondItem="FZa-ka-J2v" secondAttribute="width" id="Kjc-dU-ebV"/>
                             <constraint firstItem="wHx-Yb-30O" firstAttribute="centerX" secondItem="TCD-x3-xU3" secondAttribute="centerX" constant="0.5" id="Kxz-2h-KZa"/>
-                            <constraint firstItem="rKy-bx-fOv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="MNH-GB-i8S"/>
                             <constraint firstItem="BYV-Io-pEk" firstAttribute="centerY" secondItem="0Wc-8p-UPo" secondAttribute="centerY" id="R3n-x2-Cfc"/>
                             <constraint firstItem="0Wc-8p-UPo" firstAttribute="width" secondItem="BYV-Io-pEk" secondAttribute="width" id="RIO-RJ-AgU"/>
                             <constraint firstAttribute="trailing" secondItem="TCD-x3-xU3" secondAttribute="trailing" constant="20" id="RVN-22-gAz"/>
                             <constraint firstItem="wHx-Yb-30O" firstAttribute="width" secondItem="TCD-x3-xU3" secondAttribute="width" id="S6a-MY-zlk"/>
                             <constraint firstItem="TlI-v2-t9o" firstAttribute="centerX" secondItem="Whe-DI-fQD" secondAttribute="centerX" constant="-0.5" id="Wey-Bk-9pb"/>
                             <constraint firstItem="ak6-aR-y6Z" firstAttribute="height" secondItem="dqM-rj-03z" secondAttribute="height" id="WlU-8e-jdN"/>
-                            <constraint firstItem="BYV-Io-pEk" firstAttribute="top" secondItem="rKy-bx-fOv" secondAttribute="bottom" constant="3" id="XAu-Zx-TvA"/>
                             <constraint firstItem="YBv-3U-71Z" firstAttribute="height" secondItem="Whe-DI-fQD" secondAttribute="height" id="Z5d-gp-fkD"/>
                             <constraint firstItem="TlI-v2-t9o" firstAttribute="width" secondItem="Whe-DI-fQD" secondAttribute="width" id="ZOM-d6-Pj5"/>
                             <constraint firstItem="TCD-x3-xU3" firstAttribute="height" secondItem="0Wc-8p-UPo" secondAttribute="height" id="Zmt-Ed-CpF"/>
@@ -125,7 +110,6 @@
                             <constraint firstItem="YBv-3U-71Z" firstAttribute="width" secondItem="KMI-fP-lp7" secondAttribute="width" id="i5R-z7-lJn"/>
                             <constraint firstItem="wHx-Yb-30O" firstAttribute="height" secondItem="dqM-rj-03z" secondAttribute="height" id="iad-Qb-hog"/>
                             <constraint firstItem="dqM-rj-03z" firstAttribute="width" secondItem="KMI-fP-lp7" secondAttribute="width" id="ihs-Zd-sbe"/>
-                            <constraint firstItem="rKy-bx-fOv" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="jR7-WH-N7m"/>
                             <constraint firstItem="TCD-x3-xU3" firstAttribute="width" secondItem="0Wc-8p-UPo" secondAttribute="width" id="kIY-1p-8yi"/>
                             <constraint firstItem="ak6-aR-y6Z" firstAttribute="top" secondItem="BYV-Io-pEk" secondAttribute="bottom" constant="8" symbolic="YES" id="kmr-E6-mVf"/>
                             <constraint firstItem="ak6-aR-y6Z" firstAttribute="centerX" secondItem="FZa-ka-J2v" secondAttribute="centerX" id="lB5-jy-OpD"/>
@@ -134,6 +118,7 @@
                             <constraint firstItem="TCD-x3-xU3" firstAttribute="centerY" secondItem="0Wc-8p-UPo" secondAttribute="centerY" id="rRC-fd-Icu"/>
                             <constraint firstItem="KMI-fP-lp7" firstAttribute="height" secondItem="TlI-v2-t9o" secondAttribute="height" id="t0h-i3-1Z7"/>
                             <constraint firstItem="dqM-rj-03z" firstAttribute="centerX" secondItem="0Wc-8p-UPo" secondAttribute="centerX" constant="0.5" id="tKq-N0-zxa"/>
+                            <constraint firstItem="BYV-Io-pEk" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" symbolic="YES" id="yiB-vz-7St"/>
                             <constraint firstItem="YBv-3U-71Z" firstAttribute="centerX" secondItem="KMI-fP-lp7" secondAttribute="centerX" id="yuv-DN-fdS"/>
                         </constraints>
                     </view>

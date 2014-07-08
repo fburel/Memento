@@ -93,7 +93,7 @@
         [self checkCard:selectedCard];
     });
     
-    
+ 
 }
 
 - (UIImage *) imageForCardValue:(MementoGameCard)value
@@ -130,7 +130,7 @@
 - (MementoGamePosition) positionForCard:(CardView *)card
 {
     long tag = card.tag;
-    tag--;
+    tag--; 
     
     MementoGamePosition position;
     position.row = (int)tag / 3;
@@ -163,6 +163,23 @@
     }
 }
 
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self becomeFirstResponder];
+}
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if(motion == UIEventSubtypeMotionShake)
+    {
+        [self beginNewGame:nil];
+    }
+}
 @end
 
 
