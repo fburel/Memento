@@ -39,17 +39,75 @@
         }
         
     }
+    
+    self.game = [MementoGame newGame];
 }
 
 - (void) cardTapped:(UIGestureRecognizer *)sender
 {
+    
     CardView * selectedCard = (CardView *)sender.view;
     
-    selectedCard.image = [UIImage imageNamed:@"Nami"];
+    if([selectedCard isShowingValueSide])
+    {
+        // already flipped!
+    }
+    else
+    {
+        MementoGamePosition position = [self positionForCard:selectedCard];
+        
+        MementoGameCard value = [self.game valueForCardAtPosition:position];
+        
+        selectedCard.image = [self imageForCardValue:value];
+        
+        [selectedCard flip];
+    }
     
-    [selectedCard flip];
+}
+
+- (UIImage *) imageForCardValue:(MementoGameCard)value
+{
+    UIImage * image;
+    
+    switch (value) {
+        case MementoGameCardValue1:
+            image = [UIImage imageNamed:@"luffy"];
+            break;
+        case MementoGameCardValue2:
+            image = [UIImage imageNamed:@"zorro"];
+            break;
+        case MementoGameCardValue3:
+            image = [UIImage imageNamed:@"sogeking"];
+            break;
+        case MementoGameCardValue4:
+            image = [UIImage imageNamed:@"franky"];
+            break;
+        case MementoGameCardJoker1:
+            image = [UIImage imageNamed:@"Nami"];
+            break;
+        case MementoGameCardJoker2:
+            image = [UIImage imageNamed:@"robin"];
+            break;
+            
+        default:
+            break;
+    }
+    
+    return image;
 }
 
 
+- (MementoGamePosition) positionForCard:(CardView *)card
+{
+    long tag = card.tag;
+    tag--;
+    
+    MementoGamePosition position;
+    position.row = (int)tag / 3;
+    position.column = (int)tag % 3;
+    
+    return position;
+    
+}
 
 @end
