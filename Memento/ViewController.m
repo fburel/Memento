@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MementoGame.h"
+#import "CardView.h"
 
 @interface ViewController ()
 
@@ -22,12 +23,33 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // Ajout du tapGR sur chacune des cardView
+    for (UIView * item in self.view.subviews)
+    {
+        
+        if([item isKindOfClass:[CardView class]])
+        {
+            // Ajout du tapGR
+            UITapGestureRecognizer * tap;
+            tap = [UITapGestureRecognizer new];
+            [tap addTarget:self action:@selector(cardTapped:)];
+            [item addGestureRecognizer:tap];
+            
+        }
+        
+    }
 }
 
-- (void)didReceiveMemoryWarning
+- (void) cardTapped:(UIGestureRecognizer *)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    CardView * selectedCard = (CardView *)sender.view;
+    
+    selectedCard.image = [UIImage imageNamed:@"Nami"];
+    
+    [selectedCard flip];
 }
+
+
 
 @end

@@ -43,12 +43,15 @@
 
 - (void) flip
 {
+    self.valueSideImageView.image = self.image;
     
+    self.coverSideImageView.hidden = !self.coverSideImageView.hidden;
+    self.valueSideImageView.hidden = !self.valueSideImageView.hidden;
 }
 
 - (BOOL) isShowingValueSide
 {
-    return NO;
+    return self.coverSideImageView.hidden;
 }
 
 @end
