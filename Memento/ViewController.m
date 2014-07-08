@@ -18,6 +18,9 @@
 @end
 
 @implementation ViewController
+{
+    CardView * _lastSelectedCard;
+}
 
 - (void)viewDidLoad
 {
@@ -62,6 +65,8 @@
         }
         
     }
+    
+    _lastSelectedCard = nil;
 }
 
 - (void) cardTapped:(UIGestureRecognizer *)sender
@@ -83,6 +88,9 @@
         
         [selectedCard flip];
     }
+    
+    [self checkCard:selectedCard];
+    
     
 }
 
@@ -130,4 +138,40 @@
     
 }
 
+- (void) checkCard:(CardView *)card
+{
+    if(_lastSelectedCard)
+    {
+        MementoGameCard c1 = [self.game valueForCardAtPosition:[self positionForCard:card]];
+        MementoGameCard c2 = [self.game valueForCardAtPosition:[self positionForCard:_lastSelectedCard]];;
+        
+        if(c1 != c2)
+        {
+            [card flip];
+            [_lastSelectedCard flip];
+        }
+        
+        _lastSelectedCard = nil;
+        
+        
+    }
+    else
+    {
+        _lastSelectedCard = card;
+    }
+}
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
