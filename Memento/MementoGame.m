@@ -39,8 +39,9 @@
                           ];
     
     MementoGame * game = [[MementoGame alloc]init];
-    game.deck = baseSet; // TODO: shamble it!!!
-    
+    game.deck = [baseSet sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        return (random()%3 - 1);
+    }];
     return game;
 }
 
